@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Formularios</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Esse eu fiz acompanhando o curso</h1>
+	<form action="cadastro.php" method="GET">
+		<fieldset>
+			<legend>Informaçoes pessoais</legend>
+				NOME: <br>
+				<input type="text" name="nome" autofocus="" maxlength="80"> <br>
+				E-MAIL: <br>
+				<input type="email" name="email" required=""> <br>
+				SENHA: <br>
+				<input type="password" name="senha" required="" maxlength="8"> <br>
+				E-MAIL comercial: <br>
+				<input type="email" name="email" disabled=""> <br>
+				<br>
+				TIME: <br>
+				<input type="radio" name="time" value="vasco" checked=""> Vasco<br>
+				<input type="radio" name="time" value="botafogo"> Botafogo<br>
+				<input type="radio" name="time" value="fluminense"> Fluminense<br>
+				<input type="radio" name="time" value="flamengo"> Flamengo<br>
+				<br>
+				Cores:<br>
+				<input type="checkbox" name="cores" value="verde"> Verde<br>
+				<input type="checkbox" name="cores" value="azul" checked=""> Azul<br>
+				<input type="checkbox" name="cores" value="preto"> Preto<br>
+				<br>
+				<input type="submit" name="btn-enviar" value="Enviar">
+		</fieldset>
+	</form>
+
+	<h1>Esse eu fiz sozinho</h1>
+	<form>
+		<fieldset>
+			<legend>Cadastro da empresa</legend>
+			NOME DA EMPRESA: <br>
+			<input type="text" name="name" maxlength="80" autofocus="" required=""> <br>
+			E-MAIL: <br>
+			<input type="email" name="email" required=""> <br>
+			SENHA: <br>
+			<input type="password" name="senha" required="" maxlength="8"> <br>
+			<br>
+			PRODUTOS: <br>
+			<input type="radio" name="produtos" value="alimento"> Alimento<br>
+				<input type="checkbox" name="alimento-1" value="batata"> Batata<br>
+				<input type="checkbox" name="alimento-1" value="cenoura"> Cenoura<br>
+				<input type="checkbox" name="alimento-1" value="carne"> Carne<br>
+			<input type="radio" name="produtos" value="tecnologia"> Tecnologia<br>
+			<input type="radio" name="produtos" value="roupas"> Roupas<br>
+			<br>
+			<input type="submit" name="btn-enviar" value="Finalizar!"><br>
+
+		</fieldset>
+	</form>
+</body>
+</html>
