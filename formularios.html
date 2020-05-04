@@ -10,9 +10,9 @@
 		<fieldset>
 			<legend>Informaçoes pessoais</legend>
 				NOME: <br>
-				<input type="text" name="nome" autofocus="" maxlength="80"> <br>
+				<input type="text" name="nome" autofocus="" maxlength="80" autocomplete="on"> <br>
 				E-MAIL: <br>
-				<input type="email" name="email" required=""> <br>
+				<input type="email" name="email" required="" autocomplete="off" placeholder="seuemail@gmail.com"> <br>
 				SENHA: <br>
 				<input type="password" name="senha" required="" maxlength="8"> <br>
 				E-MAIL comercial: <br>
@@ -29,32 +29,44 @@
 				<input type="checkbox" name="cores" value="azul" checked=""> Azul<br>
 				<input type="checkbox" name="cores" value="preto"> Preto<br>
 				<br>
+				Quantidade: <br>
+				<input type="number" name="quantidade" min="0" max="500" step="10"> <br>
+				<input type="range" name="quantidade" min="1" max="3"> <br>
+
+				Cor: <br>
+				<input type="color" name="cor"> <br>
+				<br>
+				IMAGEM: <br>
+				<input type="file" name="imagem"> <br>
+				<br>
+				<input type="hidden" name="id"> <br> <br>
+				URL: <br>
+				<input type="url" name="site"> <br> <br>
 				<input type="submit" name="btn-enviar" value="Enviar">
 		</fieldset>
 	</form>
 
-	<h1>Esse eu fiz sozinho</h1>
-	<form>
-		<fieldset>
-			<legend>Cadastro da empresa</legend>
-			NOME DA EMPRESA: <br>
-			<input type="text" name="name" maxlength="80" autofocus="" required=""> <br>
-			E-MAIL: <br>
-			<input type="email" name="email" required=""> <br>
-			SENHA: <br>
-			<input type="password" name="senha" required="" maxlength="8"> <br>
-			<br>
-			PRODUTOS: <br>
-			<input type="radio" name="produtos" value="alimento"> Alimento<br>
-				<input type="checkbox" name="alimento-1" value="batata"> Batata<br>
-				<input type="checkbox" name="alimento-1" value="cenoura"> Cenoura<br>
-				<input type="checkbox" name="alimento-1" value="carne"> Carne<br>
-			<input type="radio" name="produtos" value="tecnologia"> Tecnologia<br>
-			<input type="radio" name="produtos" value="roupas"> Roupas<br>
-			<br>
-			<input type="submit" name="btn-enviar" value="Finalizar!"><br>
+	<!--  
+		<h1>Esse eu fiz sozinho</h1>
+		<form>
+			<fieldset>
+				<legend>Cadastro da empresa</legend>
+				NOME DA EMPRESA: <br>
+				<input type="text" name="name" maxlength="80" autofocus="" required=""> <br>
+				E-MAIL: <br>
+				<input type="email" name="email" required=""> <br>
+				SENHA: <br>
+				<input type="password" name="senha" required="" maxlength="8"> <br>
+				<br>
+				PRODUTOS: <br>
+				<input type="radio" name="produtos" value="alimento"> Alimento<br>
+				<input type="radio" name="produtos" value="tecnologia"> Tecnologia<br>
+				<input type="radio" name="produtos" value="roupas"> Roupas<br>
+				<br>
+				<input type="submit" name="btn-enviar" value="Finalizar!"><br>
 
-		</fieldset>
-	</form>
+			</fieldset>
+		</form>
+	-->
 </body>
 </html>
